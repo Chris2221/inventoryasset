@@ -174,13 +174,13 @@
 
     // Firebase configuration
     const firebaseConfig = {
-        apiKey: "AIzaSyBSeJONRBgtV1ubtO9THKlDUv3rCqGgnRE",
+        apiKey: "(API)",
         authDomain: "chatcarus.firebaseapp.com",
-        databaseURL: "https://chatcarus-default-rtdb.asia-southeast1.firebasedatabase.app",
+        databaseURL: "(DBURL)",
         projectId: "chatcarus",
-        storageBucket: "chatcarus.firebasestorage.app",
-        messagingSenderId: "631229423127",
-        appId: "1:631229423127:web:efc3bc7ac058b9eb950652"
+        storageBucket: "(STORAGEBUCKET",
+        messagingSenderId: "(IF)",
+        appId: "(IF)"
     };
 
     firebase.initializeApp(firebaseConfig);
