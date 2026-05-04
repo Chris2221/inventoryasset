@@ -1,0 +1,120 @@
+#loadingModal.loading-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.loading-modal-content {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    max-width: 28rem;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal-body-loading {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes drive {
+    0% {
+        left: 15%;
+        opacity: 1;
+    }
+
+    80% {
+        left: 75%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 75%;
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.animate-drive {
+    animation: drive 3s ease-in-out infinite;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    color: #2563eb;
+}
+
+.animate-pulse-start {
+    animation: pulse 1.5s ease-in-out infinite;
+    color: #6b7280;
+}
+
+.animate-pulse-end {
+    animation: pulse 1.5s ease-in-out infinite 0.5s;
+    color: #6b7280;
+}
+
+.road {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to right, #d1d5db 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+}
+
+.left-0 {
+    position: absolute;
+    left: 0;
+}
+
+.right-0 {
+    position: absolute;
+    right: 0;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-gray-800 {
+    color: #1f2937;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}

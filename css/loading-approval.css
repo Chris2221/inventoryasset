@@ -1,0 +1,136 @@
+#approveLoadingModal {
+    z-index: 9999 !important;
+    /* Super front */
+}
+
+.modal-content {
+    border-radius: 1rem;
+    /* rounded-2xl */
+    border: none;
+}
+
+.modal-body-custom {
+    padding: 2rem;
+    /* p-8 */
+}
+
+/* SVG animation styles */
+.approval-svg {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.approval-circle {
+    stroke-dasharray: 283;
+    /* Circumference of a circle with r=45 (2 * PI * 45) */
+    stroke-dashoffset: 283;
+    stroke: #4ade80;
+    animation: draw-circle 1.5s ease-in-out forwards;
+}
+
+.approval-checkmark {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    stroke: #16a34a;
+    animation: draw-checkmark 0.5s ease-in-out forwards 1s;
+    /* Start after circle */
+}
+
+/* Keyframes for the drawing animations */
+@keyframes draw-circle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-checkmark {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* --- Custom Dropup Container --- */
+.gate-pass-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* --- Enhanced Menu Styles --- */
+.gate-pass-options {
+    /* Manual Positioning */
+    position: absolute;
+    bottom: 100%;
+    /* Position above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+    /* Space between button and menu */
+    z-index: 1000;
+
+    /* Enhanced Design */
+    display: block;
+    border-radius: 0.75rem;
+    /* More rounded corners */
+    border: none;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 0.5rem;
+    animation: fadeIn 0.15s ease-out;
+    width: 280px;
+}
+
+.gate-pass-options .dropdown-item-enhanced {
+    font-weight: 500;
+    color: #374151;
+    /* Darker gray for text */
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    /* Rounded corners for items */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    width: 100%;
+}
+
+.gate-pass-options .dropdown-item-enhanced:hover,
+.gate-pass-options .dropdown-item-enhanced:focus {
+    background-color: #f3f4f6;
+    /* A light gray for hover */
+    color: #111827;
+}
+
+
+.gate-pass-option-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.gate-pass-option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #0d6efd;
+}
+
+.gate-pass-option-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.gate-pass-option-card h6 {
+    font-weight: 600;
+}
+
+.gate-pass-option-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}

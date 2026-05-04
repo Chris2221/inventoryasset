@@ -1,0 +1,214 @@
+/* Modal Enhancements */
+.modal-content {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+    color: #343a40;
+}
+
+/* Form Styling */
+.form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.2);
+    border-color: #86b7fe;
+}
+
+/* Custom File Input */
+.file-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.file-upload-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border: 2px dashed #ced4da;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    text-align: center;
+}
+
+.file-upload-label:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Image Preview */
+#assetImagePreviewContainer {
+    width: 100%;
+    height: 180px;
+    /* Fixed height for consistency */
+    border: 2px dashed #dee2e6;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+#assetImagePreview {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#assetImagePlaceholder {
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Map Styling */
+#map {
+    height: 250px;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #dee2e6;
+    z-index: 1;
+    /* Ensures map is interactive */
+}
+
+/* Address Autocomplete Suggestions */
+.autocomplete-suggestions {
+    border: 1px solid #ddd;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1056;
+    /* Higher than modal z-index */
+    border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.autocomplete-suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.autocomplete-suggestions div:hover {
+    background-color: #e9e9e9;
+}
+
+/* Footer Buttons */
+.modal-footer {
+    background-color: #f8f9fa;
+}
+
+.btn-dark {
+    background: linear-gradient(145deg, #343a40, #495057);
+    border: none;
+}
+
+.btn-dark:hover {
+    background: linear-gradient(145deg, #23272b, #3a4148);
+}
+
+
+
+/* Image Preview */
+.image-preview-container {
+    width: 100%;
+    height: 180px;
+    /* Fixed height for consistency */
+    border: 2px dashed #dee2e6;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.image-preview {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Initially hide the placeholder for the edit modal, as it will be populated with an image */
+#editAssetImagePlaceholder {
+    display: none;
+}
+
+/* Form Styling for View Modal */
+.view-label {
+    font-weight: 500;
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.view-data {
+    font-weight: 500;
+    color: #343a40;
+    background-color: #f8f9fa;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Table Styling */
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+    cursor: pointer;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+}
+
+/* Search input */
+.search-input-group {
+    position: relative;
+}
+
+.search-input-group .form-control {
+    padding-left: 2.5rem;
+}
+
+.search-input-group .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
